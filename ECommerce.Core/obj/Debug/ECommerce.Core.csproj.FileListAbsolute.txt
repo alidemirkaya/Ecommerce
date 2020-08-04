@@ -1,0 +1,5 @@
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Core\bin\Debug\ECommerce.Core.dll
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Core\bin\Debug\ECommerce.Core.pdb
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Core\obj\Debug\ECommerce.Core.csproj.CoreCompileInputs.cache
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Core\obj\Debug\ECommerce.Core.dll
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Core\obj\Debug\ECommerce.Core.pdb

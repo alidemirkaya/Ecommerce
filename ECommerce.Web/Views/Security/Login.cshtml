@@ -1,0 +1,86 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Business Login Form Responsive Widget Template :: w3layouts</title>
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Business Login Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta-Tags -->
+    <!-- css files -->
+    <link href="~/loginTemplate/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="~/loginTemplate/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- //css files -->
+    <!-- google fonts -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- //google fonts -->
+</head>
+<body>
+
+    <div class="signupform">
+        <div class="container">
+            <!-- main content -->
+            <div class="agile_info">
+                <div class="w3l_form">
+                    <div class="left_grid_info">
+                        <img src="~/loginTemplate/images/image.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="w3_info">
+                    <h2>Login to your Account</h2>
+                    <p>Enter your details to login.</p>
+                    <form method="post">
+                        @if (TempData.ContainsKey("Alert"))
+                        {
+                            <div class="alert alert-danger" role="alert">@TempData["Alert"]</div>
+                        }
+                        @if (TempData.ContainsKey("Login"))
+                        {
+                            <div class="alert alert-success" role="alert">@TempData["Login"]</div>
+                        }
+                        <label>Email Address</label>
+                        <div class="input-group">
+                            <span class="fa fa-envelope" aria-hidden="true"></span>
+                            <input type="email" placeholder="Enter Your Email" required="" name="Email">
+                        </div>
+                        <label>Password</label>
+                        <div class="input-group">
+                            <span class="fa fa-lock" aria-hidden="true"></span>
+                            <input type="Password" placeholder="Enter Password" required="" name="Password">
+                        </div>
+                        <div class="login-check">
+                            <label class="checkbox"><input type="checkbox" name="Remember" value="true"><i> </i> Remember me</label>
+                        </div>
+                        <button class="btn btn-danger btn-block" type="submit">Login</button>
+                    </form>
+
+                    <p class="account1">Dont have an account? <a href="~/Security/SignUp">Register here</a></p>
+                    <p class="account2">Do you want to change password ? <a href="~/Security/ChangePassword">Click here</a></p>
+                </div>
+            </div>
+            <!-- //main content -->
+        </div>
+        <!-- footer -->
+        <!-- footer -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿@model List<ECommerce.WebUI.Domain.ProductViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+@section head
+    {
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+}
+
+<form method="post" style="margin-top:50px">
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            @*<label for="SDate">Başlangıç Tarihi</label>*@
+            <input type="date" name="startDate" class="form-control" id="SDate" />
+        </div>
+        <div class="form-group col-md-3">
+            @*<label for="FDate">Bitiş Tarihi</label>*@
+            <input type="date" name="finishDate" class="form-control" id="FDate" />
+        </div>
+        @*<label class="control-label">Kategori</label>*@
+        <div class="form-group col-md-4">
+            <select class="form-control normallist" name="ProductOption">
+                <option value="1">En çok satılan ürünler</option>
+                <option value="0">Hiç Satılmayan Ürünler</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <button type="submit" class="btn btn-primary" style="margin-right:0px"> Listele </button>
+        </div>
+    </div>
+
+</form>
+<table class="table table-bordered">
+    <tr>
+        <th>Ürün Id</th>
+        <th>Ürün Adı</th>
+        <th>Satış Adedi</th>
+        <th>Birim Fiyatı</th>
+        <th>Açıklama</th>
+    </tr>
+    @foreach (var deg in Model)
+    {
+        <tr>
+            <td>@deg.ProductId</td>
+            <td>@deg.ProductName</td>
+            <td>@deg.Quantity</td>
+            <td>@deg.UnitPrice</td>
+            <td>@deg.Description</td>
+        </tr>
+    }
+</table>
+<script>
+    $(document).ready(function () {
+        $('.normallist').select2();
+    })
+</script>

@@ -1,0 +1,14 @@
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Data\bin\Debug\ECommerce.Data.dll.config
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Data\bin\Debug\ECommerce.Data.dll
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Data\bin\Debug\ECommerce.Data.pdb
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Data\bin\Debug\ECommerce.Core.dll
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Data\bin\Debug\EntityFramework.dll
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Data\bin\Debug\ECommerce.Core.pdb
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Data\bin\Debug\EntityFramework.xml
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Data\obj\Debug\ECommerce.Data.csprojAssemblyReference.cache
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Data\obj\Debug\ECommerce.Data.csproj.CoreCompileInputs.cache
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Data\obj\Debug\ECommerce.Data.csproj.CopyComplete
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Data\obj\Debug\ECommerce.Data.dll
+C:\Users\ali.demirkaya\OneDrive - DEFACTO PERAKENDE TIC. A.S\Masaüstü\New folder (2)\Ecommerce\ECommerce.Data\obj\Debug\ECommerce.Data.pdb

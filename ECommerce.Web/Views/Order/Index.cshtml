@@ -1,0 +1,123 @@
+﻿@model ECommerce.Web.Models.OrderIndexVM
+@{
+    ViewBag.Title = "Index";
+}
+
+@section head
+    {
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+}
+<form method="post" style="margin-top:50px">
+    @if (TempData.ContainsKey("Login"))
+    {
+        <div class="alert alert-success" role="alert">@TempData["Login"]</div>
+    }
+    <div class="form-row">
+        <div class="form-group col-lg-4">
+            @*<label for="ProductName">Ürün Adı</label>*@
+            <input type="text" name="ProductName" id="ProductName" class="form-control" placeholder="Ürün Adı" />
+        </div>
+        <div class="form-group col-lg-4">
+            @*<label for="CustomerName">Müşteri Adı</label>*@
+            <input type="text" name="CustomerName" id="CustomerName" class="form-control" placeholder="Müşteri Adı" />
+        </div>
+        <div class="form-group col-lg-4">
+            @*<label for="Mail">Mail</label>*@
+            <input type="text" name="Mail" id="Mail" class="form-control" placeholder="Mail" />
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            @*<label for="SDate">Başlangıç Tarihi</label>*@
+            <input type="date" name="startDate" class="form-control" id="SDate" />
+        </div>
+        <div class="form-group col-md-3">
+            @*<label for="FDate">Bitiş Tarihi</label>*@
+            <input type="date" name="finishDate" class="form-control" id="FDate" />
+        </div>
+        <div class="form-group col-md-3">
+            @*<label for="SPrice">Başlangıç Tutarı</label>*@
+            <input type="number" name="StartPrice" class="form-control" id="SPrice" placeholder="Başlangıç Tutarı" />
+        </div>
+        <div class="form-group col-md-3">
+            @*<label for="FPrice">Bitiş Tutarı</label>*@
+            <input type="number" name="FinishPrice" class="form-control" id="FPrice" placeholder="Bitiş Tutarı" />
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="listsele">Müşteri Durumu</label>
+            <select class="form-control normallist" name="SelectCustomer" id="listsele">
+                <option value="0">Tüm Müşteriler</option>
+                <option value="1">Aktif Müşteriler</option>
+                <option value="2">Pasif Müşteriler</option>
+            </select>
+        </div>
+        @*<input type="checkbox" name="inactiveCustomer" id="inactivec" />*@
+        <div class="form-group col-md-4">
+            <label for="multise">Kategori Seçiniz</label>
+            <select style="" class="form-control multiplelist" name="categories[]" multiple id="multise">
+                @*<option value="1">Kategori-1</option>
+                    <option value="2">Kategori-2</option>
+                    <option value="3">Kategori-3</option>
+                    <option value="4">Kategori-4</option>
+                    <option value="5">Kategori-5</option>*@
+                @foreach (var item in Model.categories)
+                {
+                    <option value="@item.Id">@item.CategoryName</option>
+                }
+            </select>
+        </div>
+        <div class="form-group col-md-4">
+            <button type="submit" class="btn btn-primary" style="margin-right:0px"> Listele </button>
+        </div>
+    </div>
+</form>
+<table class="table table-bordered">
+    <tr>
+        <th>Sipariş Id</th>
+        <th>Müşteri</th>
+        <th>Telefon</th>
+        <th>Müşteri Durumu</th>
+        <th>Sipariş Durumu</th>
+        <th>Ödeme Durumu</th>
+        <th>Sipariş Toplamı</th>
+        <th>Ürün Adı</th>
+        <th>Birim Fiyat</th>
+        <th>Miktar</th>
+        <th>Kategori</th>
+    </tr>
+    @foreach(var deg in Model.orderViewModels)
+    {
+        <tr>
+            <td>@deg.OrderId</td>
+            <td>@deg.Customer</td>
+            <td>@deg.Phone</td>
+            @if(@deg.Status==true)
+            {
+                <td>Aktif</td>
+            }
+            else
+            {
+                <td>Pasif</td>
+            }           
+            <td>@deg.ShipmentStatus</td>
+            <td>@deg.PaymentStatus</td>
+            <td>@deg.OrderTotal</td>
+            <td>@deg.ProductName</td>
+            <td>@deg.UnitPrice</td>
+            <td>@deg.Quantity</td>
+            <td>@deg.CategoryName</td>
+        </tr>
+    }
+</table>
+
+<script>
+    $(document).ready(function () {
+        $('.multiplelist').select2();
+    })
+    $(document).ready(function () {
+        $('.normallist').select2();
+    })
+</script>
